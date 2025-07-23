@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+
+nav {
+  font-family: "Geist", sans-serif;
+}
+
+.nav {
+  /* padding: 2rem; */
+  align-items: center;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to left, rgba(12, 12, 12, 0.7), rgba(0, 0, 0, 0)),
+    url(../assets/logo2.png);
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.nav1 {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.links {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+li a {
+  text-decoration: none;
+  /* color: #010d20; */
+  color: white;
+}
+
+#link {
+  background-color: white;
+  color: black;
+  padding: 10px 1rem;
+  border-radius: 8px 1rem;
+  font-weight: 600;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon {
+  display: none;
+}
+
+.close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  color: white;
+}
+/* .menuIcon {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  gap: 1rem;
+  top: 108px;
+  padding-top: 2rem;
+} */
+
+/* .mobileLinks {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 360px;
+  transform: translateX(10%);
+  height: 386px;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  background-color: white;
+  padding: 10px 2rem;
+  height: 300px;
+  border-radius: 60px;
+  left: 0;
+  top: 115px;
+} */
+
+.mobileLinks a {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
+
+#linkk {
+  width: 117px;
+  height: 51px;
+  background-color: black;
+  color: white;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#linkk a {
+  color: white;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 360px;
+  transform: translateX(5%);
+  height: 386px;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  background-color: white;
+  padding: 10px 2rem;
+  height: 300px;
+  border-radius: 60px;
+  left: 0;
+  top: 115px;
+  transition: all 0.2s ease-in;
+}
+
+.hide {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 360px;
+  transform: translateX(5%);
+  height: 386px;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  background-color: white;
+  padding: 10px 2rem;
+  height: 300px;
+  border-radius: 60px;
+  left: -100%;
+  top: 115px;
+  transition: all 0.2s ease-out;
+}
+
+.menuIcon {
+  display: none;
+}
+
+#hhh {
+  color: white;
+}
+
+@media screen and (max-width: 750px) {
+  .nav1 {
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .links {
+    gap: 2rem;
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .links {
+    gap: 1rem;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  #link {
+    padding: 6px 12px;
+    border-radius: 8px 1rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .links {
+    gap: 0.5rem;
+    font-size: 14px;
+    font-weight: 200;
+  }
+
+  #link {
+    padding: 4px 8px;
+    border-radius: 8px 1rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .links {
+    display: none;
+  }
+
+  #link {
+    display: none;
+  }
+
+  .icon {
+    display: flex;
+    color: white;
+  }
+
+  .nav {
+    padding: 2rem 1rem;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+      url(../assets/logo3.png);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .nav1 {
+    border-radius: 3rem;
+    padding: 1rem;
+  }
+
+  .menuIcon {
+    display: flex;
+  }
+}
