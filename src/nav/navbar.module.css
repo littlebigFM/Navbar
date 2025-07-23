@@ -64,6 +64,7 @@ li a {
 
 .icon {
   display: none;
+  cursor: pointer;
 }
 
 /* .menuIcon {
@@ -248,9 +249,13 @@ li a {
     align-items: center;
     position: absolute;
     cursor: pointer;
-    left: 0;
-    top: 0;
+    right: 20px;
+    top: 15px;
     z-index: 1000;
-    color: white;
+    color: black;
   }
+}
+
+.close:hover {
+  color: red;
 }
