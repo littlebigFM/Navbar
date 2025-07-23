@@ -66,17 +66,6 @@ li a {
   display: none;
 }
 
-.close {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  cursor: pointer;
-  left: 0;
-  top: 0;
-  z-index: 1000;
-  color: white;
-}
 /* .menuIcon {
   display: flex;
   justify-content: center;
@@ -126,6 +115,10 @@ li a {
 #linkk a {
   color: white;
 }
+
+/* .menuIcon {
+  position: absolute;
+} */
 
 .show {
   display: flex;
@@ -247,5 +240,17 @@ li a {
 
   .menuIcon {
     display: flex;
+  }
+
+  .close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    color: white;
   }
 }

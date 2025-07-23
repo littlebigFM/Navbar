@@ -58,11 +58,10 @@ const Navbar = () => {
 
       {/* mobile view */}
 
-      <div className={style.close} onClick={hide}>
-        <IoMdClose size={40} />
-      </div>
-
       <div className={style.menuIcon}>
+        <div className={style.close} onClick={hide}>
+          <IoMdClose size={40} />
+        </div>
         <ul className={`${style.mobileLinks} ${nav ? style.show : style.hide}`}>
           <li>
             <a href="">Home</a>
